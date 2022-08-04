@@ -1,5 +1,5 @@
 //Conexion
-const listaProductos = () => fetch('http://localhost:3000/productos').then(respuesta => respuesta.json());
+const listaProductos = () => fetch(' https://json-server-damintons.herokuapp.com/productos').then(respuesta => respuesta.json());
 
 const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
   return fetch('http://localhost:3000/productos', {
